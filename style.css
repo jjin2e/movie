@@ -1,0 +1,108 @@
+@import url(reset.css);
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body {
+    background-color: #222;
+    font-size: 16px;
+    color: antiquewhite;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+}
+
+/* header */
+header {
+    border-bottom: 1px solid antiquewhite;
+    padding: 35px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+/* section : title */
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title h2 {
+    font-size: 30px;
+}
+
+/* .search-form  */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.search-input {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    width: 400px;
+    height: 45px;
+    margin-left: 30px;
+}
+
+.search-button img {
+    width: 55px;
+    height: 60px;
+    filter: invert();
+    transition: .3s;
+}
+
+.search-button img:hover {
+    filter: none;
+}
+
+/* section : movie-list */
+.movie-list {
+    margin-top: 30px;
+    line-height: 1.5em;
+}
+
+#movie-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 0 50px;
+}
+
+.movie-card {
+    border: 1px solid antiquewhite;
+    cursor: pointer;
+}
+
+#movie-card img {
+    width: 100%;
+}
+
+#movie-card h2 {
+    font-weight: 800;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.movie-desc {
+    padding: 0 30px;
+}
+
+.movie-desc p {
+    border-top: 1px solid antiquewhite;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.rating {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}

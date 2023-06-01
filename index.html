@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my movie collection</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Movie Collection</h1>
+    </header>
+
+    <!-- section : title -->
+    <section class="title">
+        <h2>내배캠 최고 평점 영화를 확인 해보세요!</h2>
+    </section>
+
+    <!-- search-form -->
+    <form class="search-form" method="get">
+        <input class="search-input" id="search-input" placeholder="제목을 입력하세요." type="text" autofocus />
+        <button class="search-button" id="search-button" type="submit">
+            <img src="images/search-icon.svg" alt="검색버튼">
+        </button>
+    </form>
+
+    <!-- section : movie-list -->
+    <section class="movie-list">
+        <div id="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg" alt="포스터" />
+            <div class="movie-desc">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, alias! Ipsa blanditiis, earum
+                    incidunt asperiores omnis enim ea totam modi tenetur sint, ut animi consequatur perferendis
+                    similique, vero laboriosam sit?
+                </p>
+                <p class="rating">7.8</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="custom.js"></script>
+</body>
+
+</html>
